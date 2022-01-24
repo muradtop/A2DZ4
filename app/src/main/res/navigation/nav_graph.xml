@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/boardFragment"
+        android:name="com.example.to_dolistproject.ui.fragments.boarding.BoardFragment"
+        android:label="fragment_board"
+        tools:layout="@layout/fragment_board" />
+    <fragment
+        android:id="@+id/mainBoardFragment"
+        android:name="com.example.to_dolistproject.ui.fragments.boarding.MainBoardFragment"
+        android:label="fragment_main_board"
+        tools:layout="@layout/fragment_main_board" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.to_dolistproject.ui.fragments.bottom_navigation.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/tasks"
+        android:name="com.example.to_dolistproject.ui.fragments.bottom_navigation.TasksFragment"
+        android:label="fragment_tasks"
+        tools:layout="@layout/fragment_tasks" />
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:name="com.example.to_dolistproject.ui.fragments.bottom_navigation.ResultsFragment"
+        android:label="fragment_results"
+        tools:layout="@layout/fragment_results" />
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.example.to_dolistproject.ui.fragments.bottom_navigation.NewsFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/createNotesFragment"
+        android:name="com.example.to_dolistproject.ui.fragments.bottom_navigation.CreateTaskFragment"
+        android:label="fragment_create_notes"
+        tools:layout="@layout/fragment_create_task" />
+</navigation>
